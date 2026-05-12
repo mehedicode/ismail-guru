@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <!-- ✅ FIX 1: viewport-fit=cover for iPhone notch + Android safe areas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#0a0000" />
+
+  <!-- ══ SEO Meta Tags ══ -->
+  <title>Ismail Guru | Maha Tantrik Guru Ismail Shah – Trusted Spiritual Guidance</title>
+  <meta name="description" content="Maha Tantrik Guru Ismail Shah – 11 Years of trusted spiritual guidance with 100% guarantee. Serving Bangladesh, India, Pakistan, Saudi Arabia & worldwide." />
+  <meta name="keywords" content="Ismail Guru, Maha Tantrik, spiritual guru, tantrik baba, vashikaran, black magic removal, spiritual healer, Bangladesh guru" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Ismail Guru | Maha Tantrik Guru Ismail Shah" />
+  <meta property="og:description" content="Trusted. Power. Privacy. 11 Years Experience with 100% Guarantee." />
+  <meta property="og:type" content="website" />
+
+  <!-- ══ Google Fonts ══
+       Cinzel Decorative  → Logo, big headings
+       Cinzel             → Navbar, buttons, labels
+       Cormorant Garamond → Elegant readable small text (replaces IM Fell)
+       Lora               → Body paragraphs
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       LOADING SCREEN
+  ═══════════════════════════════════════════ -->
+  <div id="loading-screen">
+    <div class="loader-smoke"></div>
+    <div class="loader-smoke loader-smoke--2"></div>
+    <div class="loader-smoke loader-smoke--3"></div>
+    <div class="loader-content">
+      <div class="loader-symbol">☽ ✦ ☾</div>
+      <div class="loader-logo">Ismail Guru</div>
+      <div class="loader-tagline">Unveiling the Sacred...</div>
+      <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       ABOUT US MODAL
+  ═══════════════════════════════════════════ -->
+  <div id="about-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-label="About Us">
+    <div class="modal-box">
+      <button class="modal-close" id="close-about" aria-label="Close">&times;</button>
+      <div class="modal-symbol">☽ ✦ ☾</div>
+      <h2 class="modal-title">About Ismail Guru</h2>
+      <div class="modal-divider"></div>
+      <p class="modal-body">
+        Maha Tantrik Guru Ismail Shah is a revered spiritual master with over <strong>11 years</strong> of sacred practice in the ancient arts of tantrik wisdom, astrology, and metaphysical healing. With a deep lineage rooted in centuries-old traditions, Guru Ismail Shah has guided thousands of souls across Bangladesh, India, Pakistan, Saudi Arabia, Malaysia, and beyond.
+      </p>
+      <p class="modal-body">
+        His work is built on three unbreakable pillars: <em>Trust, Power, and absolute Privacy.</em> Every consultation is conducted with the utmost discretion and spiritual integrity.
+      </p>
+      <p class="modal-body">Government Licensed. Internationally Trusted. Spiritually Guided.</p>
+      <div class="modal-license">Government Licence: <span>UA-REG-20068-20024</span></div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       ✅ FIX 1 — NAVBAR: Fully Responsive
+       - Desktop (≥700px): shows all links inline
+       - Mobile (<700px):  shows hamburger → dropdown
+  ═══════════════════════════════════════════ -->
+  <!-- ═══════════════════════════════════════════
+     NAVBAR — Always visible buttons, no hamburger
+     Shows: Reviews + About Us on ALL screen sizes
+     Contact removed (floating WhatsApp is used instead)
+═══════════════════════════════════════════ -->
+<nav id="navbar" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+
+    <!-- Logo -->
+    <a href="#hero" class="nav-logo">
+      <span class="nav-logo-sym" aria-hidden="true">✦</span> Ismail Guru
+    </a>
+
+    <!-- Always-visible nav buttons — no hamburger -->
+    <div class="nav-links">
+      <a href="#reviews" class="nav-link">
+        <span class="nav-icon" aria-hidden="true">★</span> Reviews
+      </a>
+      <button class="nav-link" id="open-about" aria-haspopup="dialog">
+        <span class="nav-icon" aria-hidden="true">◈</span> About Us
+      </button>
+    </div>
+
+  </div>
+</nav>
+
+
+  <!-- ═══════════════════════════════════════════
+       HERO SECTION
+       ✅ FIX 2 — Experience text on one line
+       ✅ FIX 3 — Real flag images via Twemoji CDN
+  ═══════════════════════════════════════════ -->
+  <section id="hero" aria-label="Hero section">
+
+    <div class="hero-bg" aria-hidden="true">
+      <div class="hero-glow hero-glow--1"></div>
+      <div class="hero-glow hero-glow--2"></div>
+      <div class="hero-glow hero-glow--3"></div>
+    </div>
+
+    <div class="hero-symbols" aria-hidden="true">
+      <span>☽</span><span>✦</span><span>☾</span><span>⊕</span><span>♄</span>
+      <span>☿</span><span>♃</span><span>♂</span><span>♀</span><span>☉</span>
+      <span>☽</span><span>✦</span><span>☾</span><span>⊕</span><span>♄</span>
+      <span>☿</span><span>♃</span><span>♂</span><span>♀</span><span>☉</span>
+    </div>
+
+    <div class="particles" aria-hidden="true" id="particles"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge">✦ &nbsp; Spiritual Master &nbsp; ✦</div>
+
+      <h1 class="hero-title">
+        Maha Tantrik<br />
+        <span class="hero-title-name">Guru Ismail Shah</span>
+      </h1>
+
+      <p class="hero-tagline">Trusted &nbsp;·&nbsp; Power &nbsp;·&nbsp; Privacy</p>
+
+      <!-- ✅ FIX 2: Single-line experience text using nowrap + smaller font on mobile -->
+      <p class="hero-experience">11 Years Experience with 100% Guarantee</p>
+
+      <!-- ✅ FIX 3: Flags as <img> tags from Twemoji CDN
+           This GUARANTEES real flag images on ALL Android versions.
+           Each flag is a small 72×72 PNG loaded from Cloudflare CDN.
+           To change a flag: find the country's Unicode code point at
+           https://emojipedia.org and update the filename in the src.
+      -->
+      <div class="hero-flags" aria-label="Countries served">
+        <img class="flag-img" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/1f1e7-1f1e9.png" alt="Bangladesh" title="Bangladesh" width="28" height="28" />
+        <img class="flag-img" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/1f1ee-1f1f3.png" alt="India" title="India" width="28" height="28" />
+        <img class="flag-img" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/1f1f5-1f1f0.png" alt="Pakistan" title="Pakistan" width="28" height="28" />
+        <img class="flag-img" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/1f1f3-1f1f5.png" alt="Nepal" title="Nepal" width="28" height="28" />
+        <img class="flag-img" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/1f1f8-1f1e6.png" alt="Saudi Arabia" title="Saudi Arabia" width="28" height="28" />
+        <img class="flag-img" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/1f1ea-1f1ec.png" alt="Egypt" title="Egypt" width="28" height="28" />
+        <img class="flag-img" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/1f1ea-1f1ed.png" alt="Western Sahara" title="Western Sahara" width="28" height="28" />
+        <img class="flag-img" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/1f1ee-1f1f7.png" alt="Iran" title="Iran" width="28" height="28" />
+        <img class="flag-img" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/1f1f2-1f1fe.png" alt="Malaysia" title="Malaysia" width="28" height="28" />
+        <img class="flag-img" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/1f1f8-1f1e9.png" alt="Sudan" title="Sudan" width="28" height="28" />
+      </div>
+
+      <!-- ✅ FIX 2: Licence on its own clear line below flags -->
+      <p class="hero-license">
+        <span class="license-dot" aria-hidden="true">◆</span>
+        Government Licence Num: UA-REG-20068-20014
+      </p>
+
+      <a href="https://wa.me/8801963561700" target="_blank" rel="noopener noreferrer" class="hero-whatsapp-btn" aria-label="Contact on WhatsApp">
+        <span class="wa-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+        </span>
+        Contact on WhatsApp
+      </a>
+    </div>
+
+    <div class="hero-candles" aria-hidden="true">
+      <div class="candle"><div class="flame"></div><div class="candle-body"></div></div>
+      <div class="candle"><div class="flame"></div><div class="candle-body"></div></div>
+      <div class="candle"><div class="flame"></div><div class="candle-body"></div></div>
+      <div class="candle"><div class="flame"></div><div class="candle-body"></div></div>
+      <div class="candle"><div class="flame"></div><div class="candle-body"></div></div>
+    </div>
+  </section>
+
+
+<!-- ═══════════════════════════════════════════
+     SERVICES SECTION
+     Left: image (1/3) | Right: service list (2/3)
+     Mobile: image on top, services below
+     To change image: replace images/service-image.jpg
+═══════════════════════════════════════════ -->
+<section id="services" aria-label="Our Services">
+  <div class="section-header">
+    <div class="section-sym" aria-hidden="true">☽ ✦ ☾</div>
+    <h2 class="section-title">Sacred Services</h2>
+    <p class="section-sub">Ancient Power. Modern Solutions.</p>
+    <div class="section-line" aria-hidden="true"></div>
+  </div>
+
+  <div class="services-layout">
+
+    <!-- Left: Image -->
+    <div class="services-image-wrap">
+      <div class="services-image-frame">
+        <img
+          src="image/ismail.jpg"
+          alt="Maha Tantrik Guru Ismail Shah"
+          loading="lazy"
+          class="services-img"
+        />
+        <!-- Glowing corner accents -->
+        <span class="svc-corner svc-corner--tl" aria-hidden="true"></span>
+        <span class="svc-corner svc-corner--br" aria-hidden="true"></span>
+      </div>
+    </div>
+
+    <!-- Right: Services list -->
+    <div class="services-list-wrap">
+      <p class="services-intro">
+        Guru Ismail Shah offers powerful spiritual solutions for life's most difficult problems —
+        handled with complete privacy and guaranteed results.
+      </p>
+
+      <ul class="services-list" aria-label="List of services">
+        <li class="svc-item">
+          <span class="svc-dot" aria-hidden="true">◆</span>
+          <span class="svc-name">Vashikaran</span>
+        </li>
+        <li class="svc-item">
+          <span class="svc-dot" aria-hidden="true">◆</span>
+          <span class="svc-name">Love Back</span>
+        </li>
+        <li class="svc-item">
+          <span class="svc-dot" aria-hidden="true">◆</span>
+          <span class="svc-name">Relationship Problem</span>
+        </li>
+        <li class="svc-item">
+          <span class="svc-dot" aria-hidden="true">◆</span>
+          <span class="svc-name">Divorce Problem</span>
+        </li>
+        <li class="svc-item">
+          <span class="svc-dot" aria-hidden="true">◆</span>
+          <span class="svc-name">Husband Wife Dispute</span>
+        </li>
+        <li class="svc-item">
+          <span class="svc-dot" aria-hidden="true">◆</span>
+          <span class="svc-name">Black Magic Removal</span>
+        </li>
+        <li class="svc-item">
+          <span class="svc-dot" aria-hidden="true">◆</span>
+          <span class="svc-name">Property Disputes</span>
+        </li>
+        <li class="svc-item">
+          <span class="svc-dot" aria-hidden="true">◆</span>
+          <span class="svc-name">Court Cases Problem</span>
+        </li>
+        <li class="svc-item">
+          <span class="svc-dot" aria-hidden="true">◆</span>
+          <span class="svc-name">Enemy Protection</span>
+        </li>
+        <li class="svc-item">
+          <span class="svc-dot" aria-hidden="true">◆</span>
+          <span class="svc-name">Physical Protection</span>
+        </li>
+      </ul>
+
+      <a href="https://wa.me/8801963561700" target="_blank" rel="noopener noreferrer" class="svc-cta">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        Book a Consultation
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- ═══════════════════════════════════════════
+       MEDIA GALLERY
+       ✅ FIX 4 — YouTube thumbnails with play button
+       HOW TO USE: Replace "dQw4w9WgXcQ" in EVERY
+       yt-card's data-id with your real YouTube video ID.
+       YouTube URL: youtube.com/watch?v=ABC123 → ID = ABC123
+       Shorts URL:  youtube.com/shorts/ABC123  → ID = ABC123
+  ═══════════════════════════════════════════ -->
+  <section id="gallery" aria-label="Media Gallery">
+    <div class="section-header">
+      <div class="section-sym" aria-hidden="true">☽ ✦ ☾</div>
+      <h2 class="section-title">Sacred Gallery</h2>
+      <p class="section-sub">Glimpses of the Mystical Journey</p>
+      <div class="section-line" aria-hidden="true"></div>
+    </div>
+
+    <div class="gallery-grid">
+
+      <!-- PHOTOS: Replace src with your real image URLs -->
+      <div class="media-card">
+        <div class="media-wrapper media-photo">
+          <img src="image/handwithoutfire.jpg" alt="Guru Ismail Shah Photo 1" loading="lazy" />
+        </div>
+      </div>
+      <div class="media-card">
+        <div class="media-wrapper media-photo">
+          <img src="image/hantwithfire.jpg" alt="Guru Ismail Shah Photo 2" loading="lazy" />
+        </div>
+      </div>
+      <div class="media-card">
+        <div class="media-wrapper media-photo">
+          <img src="image/daekskull.jpg" alt="Guru Ismail Shah Photo 3" loading="lazy" />
+        </div>
+      </div>
+      <div class="media-card">
+        <div class="media-wrapper media-photo">
+          <img src="image/sagol.jpg" alt="Guru Ismail Shah Photo 4" loading="lazy" />
+        </div>
+      </div>
+      <div class="media-card">
+        <div class="media-wrapper media-photo">
+          <img src="image/bloodskull.jpg" alt="Guru Ismail Shah Photo 5" loading="lazy" />
+        </div>
+      </div>
+
+      <!-- VIDEOS: Replace dQw4w9WgXcQ with real YouTube video IDs -->
+      <div class="media-card yt-card" data-id="bXETlH7kuo4"tabindex="0" role="button" aria-label="Play Video 1">
+        <div class="media-wrapper media-video">
+          <img class="yt-thumb" src="https://img.youtube.com/vi/bXETlH7kuo4/mqdefault.jpg" alt="Video 1 loading="lazy" />
+          <div class="yt-play-btn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor" width="38" height="38"><path d="M8 5v14l11-7z"/></svg></div>
+        </div>
+      </div>
+      <div class="media-card yt-card" data-id="bXETlH7kuo4" tabindex="0" role="button" aria-label="Play Video 2">
+        <div class="media-wrapper media-video">
+          <img class="yt-thumb" src="https://img.youtube.com/vi/bXETlH7kuo4/mqdefault.jpg" alt="Video 2" loading="lazy" />
+          <div class="yt-play-btn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor" width="38" height="38"><path d="M8 5v14l11-7z"/></svg></div>
+        </div>
+      </div>
+      <div class="media-card yt-card" data-id="dQw4w9WgXcQ" tabindex="0" role="button" aria-label="Play Video 3">
+        <div class="media-wrapper media-video">
+          <img class="yt-thumb" src="https://img.youtube.com/vi/dQw4w9WgXcQ/mqdefault.jpg" alt="Video 3" loading="lazy" />
+          <div class="yt-play-btn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor" width="38" height="38"><path d="M8 5v14l11-7z"/></svg></div>
+        </div>
+      </div>
+      <div class="media-card yt-card" data-id="dQw4w9WgXcQ" tabindex="0" role="button" aria-label="Play Video 4">
+        <div class="media-wrapper media-video">
+          <img class="yt-thumb" src="https://img.youtube.com/vi/dQw4w9WgXcQ/mqdefault.jpg" alt="Video 4" loading="lazy" />
+          <div class="yt-play-btn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor" width="38" height="38"><path d="M8 5v14l11-7z"/></svg></div>
+        </div>
+      </div>
+      <div class="media-card yt-card" data-id="dQw4w9WgXcQ" tabindex="0" role="button" aria-label="Play Video 5">
+        <div class="media-wrapper media-video">
+          <img class="yt-thumb" src="https://img.youtube.com/vi/dQw4w9WgXcQ/mqdefault.jpg" alt="Video 5" loading="lazy" />
+          <div class="yt-play-btn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor" width="38" height="38"><path d="M8 5v14l11-7z"/></svg></div>
+        </div>
+      </div>
+      <div class="media-card yt-card" data-id="dQw4w9WgXcQ" tabindex="0" role="button" aria-label="Play Video 6">
+        <div class="media-wrapper media-video">
+          <img class="yt-thumb" src="https://img.youtube.com/vi/dQw4w9WgXcQ/mqdefault.jpg" alt="Video 6" loading="lazy" />
+          <div class="yt-play-btn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor" width="38" height="38"><path d="M8 5v14l11-7z"/></svg></div>
+        </div>
+      </div>
+      <div class="media-card yt-card" data-id="dQw4w9WgXcQ" tabindex="0" role="button" aria-label="Play Video 7">
+        <div class="media-wrapper media-video">
+          <img class="yt-thumb" src="https://img.youtube.com/vi/dQw4w9WgXcQ/mqdefault.jpg" alt="Video 7" loading="lazy" />
+          <div class="yt-play-btn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor" width="38" height="38"><path d="M8 5v14l11-7z"/></svg></div>
+        </div>
+      </div>
+      <div class="media-card yt-card" data-id="dQw4w9WgXcQ" tabindex="0" role="button" aria-label="Play Video 8">
+        <div class="media-wrapper media-video">
+          <img class="yt-thumb" src="https://img.youtube.com/vi/dQw4w9WgXcQ/mqdefault.jpg" alt="Video 8" loading="lazy" />
+          <div class="yt-play-btn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor" width="38" height="38"><path d="M8 5v14l11-7z"/></svg></div>
+        </div>
+      </div>
+      <div class="media-card yt-card" data-id="dQw4w9WgXcQ" tabindex="0" role="button" aria-label="Play Video 9">
+        <div class="media-wrapper media-video">
+          <img class="yt-thumb" src="https://img.youtube.com/vi/dQw4w9WgXcQ/mqdefault.jpg" alt="Video 9" loading="lazy" />
+          <div class="yt-play-btn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor" width="38" height="38"><path d="M8 5v14l11-7z"/></svg></div>
+        </div>
+      </div>
+      <div class="media-card yt-card" data-id="dQw4w9WgXcQ" tabindex="0" role="button" aria-label="Play Video 10">
+        <div class="media-wrapper media-video">
+          <img class="yt-thumb" src="https://img.youtube.com/vi/dQw4w9WgXcQ/mqdefault.jpg" alt="Video 10" loading="lazy" />
+          <div class="yt-play-btn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor" width="38" height="38"><path d="M8 5v14l11-7z"/></svg></div>
+        </div>
+      </div>
+      <div class="media-card yt-card" data-id="dQw4w9WgXcQ" tabindex="0" role="button" aria-label="Play Video 11">
+        <div class="media-wrapper media-video">
+          <img class="yt-thumb" src="https://img.youtube.com/vi/dQw4w9WgXcQ/mqdefault.jpg" alt="Video 11" loading="lazy" />
+          <div class="yt-play-btn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor" width="38" height="38"><path d="M8 5v14l11-7z"/></svg></div>
+        </div>
+      </div>
+      <div class="media-card yt-card" data-id="dQw4w9WgXcQ" tabindex="0" role="button" aria-label="Play Video 12">
+        <div class="media-wrapper media-video">
+          <img class="yt-thumb" src="https://img.youtube.com/vi/dQw4w9WgXcQ/mqdefault.jpg" alt="Video 12" loading="lazy" />
+          <div class="yt-play-btn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor" width="38" height="38"><path d="M8 5v14l11-7z"/></svg></div>
+        </div>
+      </div>
+      <div class="media-card yt-card" data-id="dQw4w9WgXcQ" tabindex="0" role="button" aria-label="Play Video 13">
+        <div class="media-wrapper media-video">
+          <img class="yt-thumb" src="https://img.youtube.com/vi/dQw4w9WgXcQ/mqdefault.jpg" alt="Video 13" loading="lazy" />
+          <div class="yt-play-btn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor" width="38" height="38"><path d="M8 5v14l11-7z"/></svg></div>
+        </div>
+      </div>
+      <div class="media-card yt-card" data-id="dQw4w9WgXcQ" tabindex="0" role="button" aria-label="Play Video 14">
+        <div class="media-wrapper media-video">
+          <img class="yt-thumb" src="https://img.youtube.com/vi/dQw4w9WgXcQ/mqdefault.jpg" alt="Video 14" loading="lazy" />
+          <div class="yt-play-btn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor" width="38" height="38"><path d="M8 5v14l11-7z"/></svg></div>
+        </div>
+      </div>
+      <div class="media-card yt-card" data-id="dQw4w9WgXcQ" tabindex="0" role="button" aria-label="Play Video 15">
+        <div class="media-wrapper media-video">
+          <img class="yt-thumb" src="https://img.youtube.com/vi/dQw4w9WgXcQ/mqdefault.jpg" alt="Video 15" loading="lazy" />
+          <div class="yt-play-btn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor" width="38" height="38"><path d="M8 5v14l11-7z"/></svg></div>
+        </div>
+      </div>
+      <div class="media-card yt-card" data-id="dQw4w9WgXcQ" tabindex="0" role="button" aria-label="Play Video 16">
+        <div class="media-wrapper media-video">
+          <img class="yt-thumb" src="https://img.youtube.com/vi/dQw4w9WgXcQ/mqdefault.jpg" alt="Video 16" loading="lazy" />
+          <div class="yt-play-btn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor" width="38" height="38"><path d="M8 5v14l11-7z"/></svg></div>
+        </div>
+      </div>
+      <div class="media-card yt-card" data-id="dQw4w9WgXcQ" tabindex="0" role="button" aria-label="Play Video 17">
+        <div class="media-wrapper media-video">
+          <img class="yt-thumb" src="https://img.youtube.com/vi/dQw4w9WgXcQ/mqdefault.jpg" alt="Video 17" loading="lazy" />
+          <div class="yt-play-btn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor" width="38" height="38"><path d="M8 5v14l11-7z"/></svg></div>
+        </div>
+      </div>
+      <div class="media-card yt-card" data-id="dQw4w9WgXcQ" tabindex="0" role="button" aria-label="Play Video 18">
+        <div class="media-wrapper media-video">
+          <img class="yt-thumb" src="https://img.youtube.com/vi/dQw4w9WgXcQ/mqdefault.jpg" alt="Video 18" loading="lazy" />
+          <div class="yt-play-btn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor" width="38" height="38"><path d="M8 5v14l11-7z"/></svg></div>
+        </div>
+      </div>
+      <div class="media-card yt-card" data-id="dQw4w9WgXcQ" tabindex="0" role="button" aria-label="Play Video 19">
+        <div class="media-wrapper media-video">
+          <img class="yt-thumb" src="https://img.youtube.com/vi/dQw4w9WgXcQ/mqdefault.jpg" alt="Video 19" loading="lazy" />
+          <div class="yt-play-btn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor" width="38" height="38"><path d="M8 5v14l11-7z"/></svg></div>
+        </div>
+      </div>
+      <div class="media-card yt-card" data-id="dQw4w9WgXcQ" tabindex="0" role="button" aria-label="Play Video 20">
+        <div class="media-wrapper media-video">
+          <img class="yt-thumb" src="https://img.youtube.com/vi/dQw4w9WgXcQ/mqdefault.jpg" alt="Video 20" loading="lazy" />
+          <div class="yt-play-btn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor" width="38" height="38"><path d="M8 5v14l11-7z"/></svg></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       REVIEWS SECTION
+       ✅ FIX 5 — Upgraded comment form:
+       Name + Location + 5-Star Rating + Comment
+  ═══════════════════════════════════════════ -->
+  <section id="reviews" aria-label="Client Reviews">
+    <div class="section-header">
+      <div class="section-sym" aria-hidden="true">☽ ✦ ☾</div>
+      <h2 class="section-title">Sacred Testimonials</h2>
+      <p class="section-sub">Words From Souls Transformed</p>
+      <div class="section-line" aria-hidden="true"></div>
+    </div>
+
+    <div class="reviews-scroll-wrap">
+      <div class="reviews-track">
+
+        <!-- Review 1 — copy this block to add more reviews -->
+        <article class="review-card">
+          <div class="review-avatar" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="19" stroke="#c8960c" stroke-width="1.5"/><circle cx="20" cy="15" r="7" fill="#2a0a0a"/><path d="M6 36c0-7.732 6.268-14 14-14s14 6.268 14 14" fill="#2a0a0a"/></svg>
+          </div>
+          <div class="review-meta">
+            <strong class="review-name">Rafiq Ahmed</strong>
+            <span class="review-loc">📍 Dhaka, Bangladesh</span>
+          </div>
+          <p class="review-text">"After years of suffering, Guru Ismail Shah solved my problem within 3 days. His power is real and privacy is 100%. I am grateful forever."</p>
+          <div class="review-stars" aria-label="5 stars">★★★★★</div>
+        </article>
+
+        <!-- Review 2 -->
+        <article class="review-card">
+          <div class="review-avatar" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="19" stroke="#c8960c" stroke-width="1.5"/><circle cx="20" cy="15" r="7" fill="#2a0a0a"/><path d="M6 36c0-7.732 6.268-14 14-14s14 6.268 14 14" fill="#2a0a0a"/></svg>
+          </div>
+          <div class="review-meta">
+            <strong class="review-name">Priya Sharma</strong>
+            <span class="review-loc">📍 Mumbai, India</span>
+          </div>
+          <p class="review-text">"I contacted Guru Ji for my marriage problem. Very experienced and trustworthy. My issue was resolved completely. Highly recommend."</p>
+          <div class="review-stars" aria-label="5 stars">★★★★★</div>
+        </article>
+
+        <!-- Review 3 -->
+        <article class="review-card">
+          <div class="review-avatar" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="19" stroke="#c8960c" stroke-width="1.5"/><circle cx="20" cy="15" r="7" fill="#2a0a0a"/><path d="M6 36c0-7.732 6.268-14 14-14s14 6.268 14 14" fill="#2a0a0a"/></svg>
+          </div>
+          <div class="review-meta">
+            <strong class="review-name">Khalid Al-Rashid</strong>
+            <span class="review-loc">📍 Riyadh, Saudi Arabia</span>
+          </div>
+          <p class="review-text">"Most powerful and trusted spiritual master I have consulted. Full privacy guaranteed. Alhamdulillah, my life changed completely."</p>
+          <div class="review-stars" aria-label="5 stars">★★★★★</div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- Write a Comment button -->
+    <div class="reviews-cta">
+      <button class="comment-btn" id="open-comment-form">✍ Write a Comment</button>
+    </div>
+
+    <!-- ✅ FIX 5: Upgraded comment form with Location + Star Rating -->
+    <div class="comment-form-wrap" id="comment-form-wrap">
+      <div class="comment-form-box">
+        <h3 class="comment-form-title">Share Your Experience</h3>
+
+        <!-- Name -->
+        <label for="comment-name" class="comment-label">Your Name</label>
+        <input type="text" id="comment-name" class="comment-input" placeholder="Enter your full name" autocomplete="name" />
+
+        <!-- Location (NEW) -->
+        <label for="comment-location" class="comment-label">Your Location</label>
+        <input type="text" id="comment-location" class="comment-input" placeholder="e.g. Dhaka, Bangladesh" />
+
+        <!-- Star Rating (NEW) -->
+        <label class="comment-label">Your Rating</label>
+        <!-- Stars: clicking one sets rating. JS handles highlight. -->
+        <div class="star-rating" id="star-rating" role="group" aria-label="Rate 1 to 5 stars">
+          <button class="star" data-value="1" type="button" aria-label="1 star">★</button>
+          <button class="star" data-value="2" type="button" aria-label="2 stars">★</button>
+          <button class="star" data-value="3" type="button" aria-label="3 stars">★</button>
+          <button class="star" data-value="4" type="button" aria-label="4 stars">★</button>
+          <button class="star" data-value="5" type="button" aria-label="5 stars">★</button>
+        </div>
+        <!-- Hidden input stores selected star number (1–5) -->
+        <input type="hidden" id="comment-rating" value="0" />
+
+        <!-- Comment -->
+        <label for="comment-text" class="comment-label">Your Comment</label>
+        <textarea id="comment-text" class="comment-textarea" rows="4" placeholder="Write your experience here..."></textarea>
+
+        <button class="comment-submit-btn" id="comment-submit">Submit Comment</button>
+      </div>
+    </div>
+
+    <!-- Comment popup (shown after submit) -->
+    <div id="comment-popup" class="comment-popup" role="alertdialog" aria-modal="true">
+      <div class="comment-popup-box">
+        <div class="comment-popup-sym">✦</div>
+        <p>Comments are available only for clients who worked with <strong>Ismail Guru</strong>.</p>
+        <button class="comment-popup-close" id="close-comment-popup">Close</button>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       CONTACT SECTION
+       ✅ FIX 6 — Added WhatsApp Channel card
+  ═══════════════════════════════════════════ -->
+  <section id="contact" aria-label="Contact Information">
+    <div class="section-header">
+      <div class="section-sym" aria-hidden="true">☽ ✦ ☾</div>
+      <h2 class="section-title">Reach the Guru</h2>
+      <p class="section-sub">All communications are strictly private &amp; protected</p>
+      <div class="section-line" aria-hidden="true"></div>
+    </div>
+
+    <div class="contact-grid">
+
+      <!-- WhatsApp personal -->
+      <a href="https://wa.me/8801963561700" target="_blank" rel="noopener noreferrer" class="contact-card" aria-label="WhatsApp">
+        <div class="contact-icon contact-icon--green">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="26" height="26" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        </div>
+        <div class="contact-info">
+          <span class="contact-label">WhatsApp</span>
+          <span class="contact-value">+880 1963 561700</span>
+        </div>
+      </a>
+
+      <!-- ✅ FIX 6: WhatsApp Channel (NEW) -->
+      <a href="https://whatsapp.com/channel/0029VbCq2R0LCoWtghvir50m" target="_blank" rel="noopener noreferrer" class="contact-card" aria-label="WhatsApp Channel">
+        <div class="contact-icon contact-icon--green">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="26" height="26" aria-hidden="true">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+          </svg>
+        </div>
+        <div class="contact-info">
+          <span class="contact-label">WhatsApp Channel</span>
+          <span class="contact-value">Maha Tantrik Guru Ismail Shah</span>
+        </div>
+      </a>
+
+      <!-- IMO -->
+      <a href="tel:+8801965047905" class="contact-card" aria-label="IMO">
+        <div class="contact-icon contact-icon--blue">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="26" height="26" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+        </div>
+        <div class="contact-info">
+          <span class="contact-label">IMO</span>
+          <span class="contact-value">+880 1965 047905</span>
+        </div>
+      </a>
+
+      <!-- Email -->
+      <a href="mailto:hi.ismailshah@gmail.com" class="contact-card" aria-label="Email">
+        <div class="contact-icon contact-icon--gold">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="26" height="26" aria-hidden="true"><path d="M20 4H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm0 2v.511l-8 6.223-8-6.222V6h16zM4 18V9.044l7.386 5.745a.994.994 0 001.228 0L20 9.044 20.002 18H4z"/></svg>
+        </div>
+        <div class="contact-info">
+          <span class="contact-label">Email</span>
+          <span class="contact-value">hi.ismailshah@gmail.com</span>
+        </div>
+      </a>
+
+      <!-- Telegram personal -->
+      <a href="https://t.me/kobirajismailshah" target="_blank" rel="noopener noreferrer" class="contact-card" aria-label="Telegram">
+        <div class="contact-icon contact-icon--blue">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="26" height="26" aria-hidden="true"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.820 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+        </div>
+        <div class="contact-info">
+          <span class="contact-label">Telegram</span>
+          <span class="contact-value">@kobirajismailshah</span>
+        </div>
+      </a>
+
+      <!-- Telegram channel -->
+      <a href="https://t.me/+9_ojFY9ztW5lZmQ1" target="_blank" rel="noopener noreferrer" class="contact-card" aria-label="Telegram Channel">
+        <div class="contact-icon contact-icon--blue">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="26" height="26" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
+        </div>
+        <div class="contact-info">
+          <span class="contact-label">Telegram Channel</span>
+          <span class="contact-value">Join Our Channel</span>
+        </div>
+      </a>
+
+      <!-- Facebook page -->
+      <a href="https://www.facebook.com/share/1BWngV2CB6/" target="_blank" rel="noopener noreferrer" class="contact-card" aria-label="Facebook Page">
+        <div class="contact-icon contact-icon--fb">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="26" height="26" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </div>
+        <div class="contact-info">
+          <span class="contact-label">Facebook Page</span>
+          <span class="contact-value">Official Page</span>
+        </div>
+      </a>
+
+      <!-- Facebook account -->
+      <a href="https://www.facebook.com/share/1DdUzo6cPB/" target="_blank" rel="noopener noreferrer" class="contact-card" aria-label="Facebook Account">
+        <div class="contact-icon contact-icon--fb">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="26" height="26" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+        </div>
+        <div class="contact-info">
+          <span class="contact-label">Facebook Account</span>
+          <span class="contact-value">Personal Profile</span>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+       ✅ FIX 7 — Added address
+  ═══════════════════════════════════════════ -->
+  <footer id="footer" aria-label="Footer">
+    <div class="footer-inner">
+
+      <div class="footer-brand">
+        <div class="footer-logo"><span class="footer-sym" aria-hidden="true">✦</span> Ismail Guru</div>
+        <p class="footer-tagline">Trusted. Power. Privacy.</p>
+        <p class="footer-trust">Privacy Protected &nbsp;•&nbsp; Spiritual Guidance &nbsp;•&nbsp; Trusted Worldwide</p>
+        <!-- ✅ FIX 7: Address -->
+        <address class="footer-address">
+          <svg class="footer-address-icon" viewBox="0 0 24 24" fill="currentColor" width="13" height="13" aria-hidden="true">
+            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/>
+          </svg>
+          Barwamari, Jamalpur Sadar 2001, Bangladesh
+        </address>
+      </div>
+
+      <div class="footer-links">
+        <h4 class="footer-links-title">Navigation</h4>
+        <a href="#hero"    class="footer-link">Home</a>
+        <a href="#gallery" class="footer-link">Gallery</a>
+        <a href="#reviews" class="footer-link">Reviews</a>
+        <a href="#contact" class="footer-link">Contact</a>
+        <button class="footer-link footer-link-btn" id="footer-about-btn">About Us</button>
+      </div>
+
+      <div class="footer-social">
+        <h4 class="footer-links-title">Connect</h4>
+        <div class="footer-icons">
+          <a href="https://wa.me/8801963561700" target="_blank" rel="noopener noreferrer" class="footer-icon-link footer-icon-link--green" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </a>
+          <a href="https://t.me/kobirajismailshah" target="_blank" rel="noopener noreferrer" class="footer-icon-link footer-icon-link--blue" aria-label="Telegram">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.820 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+          </a>
+          <a href="https://www.facebook.com/share/1BWngV2CB6/" target="_blank" rel="noopener noreferrer" class="footer-icon-link footer-icon-link--fb" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="mailto:hi.ismailshah@gmail.com" class="footer-icon-link footer-icon-link--gold" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M20 4H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm0 2v.511l-8 6.223-8-6.222V6h16zM4 18V9.044l7.386 5.745a.994.994 0 001.228 0L20 9.044 20.002 18H4z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2024 Ismail Guru &nbsp;·&nbsp; Maha Tantrik Guru Ismail Shah &nbsp;·&nbsp; All Rights Reserved</p>
+      <p class="footer-licence">Govt. Licence: UA-REG-20068-20024</p>
+    </div>
+    <div class="footer-deco" aria-hidden="true">☽ ✦ ◆ ✦ ☾</div>
+  </footer>
+
+  <!-- Floating WhatsApp FAB -->
+  <a href="https://wa.me/8801963561700" target="_blank" rel="noopener noreferrer" class="fab-whatsapp" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
