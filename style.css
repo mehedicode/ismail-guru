@@ -302,7 +302,7 @@ address { font-style: normal; }
 .hero-symbols {
   position: absolute; inset: 0; z-index: 0;
   display: grid; grid-template-columns: repeat(5,1fr); grid-template-rows: repeat(4,1fr);
-  padding: 5%; pointer-events: none; opacity: .06;
+  padding: 5%; pointer-events: none; opacity: .2;
 }
 .hero-symbols span {
   display: flex; align-items: center; justify-content: center;
@@ -360,9 +360,28 @@ address { font-style: normal; }
 }
 
 /* ✅ FIX 2: Experience text — single line, never wraps */
+.exper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1px;
+}
+.hero-experience11 , .hero-experience100 {
+  margin-bottom: 25px;
+  font-family: serif;
+  font-size: clamp(0.72rem, 2.2vw, .95rem);
+  font-weight: 600;
+  color: var(--white-dim);
+  letter-spacing: .08em;
+  margin-bottom: 1.4rem;
+  animation: fadeUp .7s .4s both;
+  white-space: nowrap; /* prevents line break */
+  overflow: hidden; text-overflow: ellipsis;
+}
 .hero-experience {
   font-family: var(--font-elegant);
-  font-size: clamp(.72rem, 2.2vw, .95rem);
+  font-size: clamp(.75rem, 2.2vw, .95rem);
   font-weight: 600;
   color: var(--white-dim);
   letter-spacing: .08em;
@@ -405,7 +424,17 @@ address { font-style: normal; }
   margin-bottom: 2rem;
   animation: fadeUp .7s .6s both;
   display: flex; align-items: center; justify-content: center;
-  gap: .35rem; flex-wrap: wrap; line-height: 1.5;
+  gap: .30rem; flex-wrap: wrap; line-height: 1.5;
+}
+.lic-num{
+  font-family: serif;
+  font-size: clamp(.60rem, 2vw, .76rem);
+  font-weight: 500;
+  color: rgba(200,150,12,.75);
+  letter-spacing: .1em;
+  ;
+  animation: fadeUp .7s .6s both;
+
 }
 .license-dot { color: var(--gold); font-size: .55rem; flex-shrink: 0; }
 
