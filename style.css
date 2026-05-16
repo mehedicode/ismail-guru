@@ -675,34 +675,122 @@ address { font-style: normal; }
 }
 
 /* ✅ FIX 4: YouTube thumbnail + play button overlay */
-.yt-thumb {
+/* ─────────────────────────────────────────
+   LOCAL HTML5 VIDEO PLAYER
+───────────────────────────────────────── */
+
+/* The <video> element fills the wrapper */
+.local-video {
+  position: absolute; inset: 0;
   width: 100%; height: 100%;
   object-fit: cover; object-position: center;
   display: block;
-  transition: opacity .3s;
+  background: #000;
+  /* Hide default browser controls until playing */
 }
-.yt-card:hover .yt-thumb { opacity: .75; }
 
-.yt-play-btn {
+/* Play button overlay — shown before video plays */
+.vid-play-btn {
   position: absolute; top: 50%; left: 50%;
   transform: translate(-50%, -50%);
-  width: 30px; height: 30px; border-radius: 50%;
-  background: rgba(200,20,20,.85);
-  border: 2px solid rgba(255,255,255,.4);
+  width: 25px; height: 25px; border-radius: 50%;
+  background: rgba(139, 0, 0, 0.88);
+  border: 1.5px solid rgba(200, 150, 12, 0.6);
   display: flex; align-items: center; justify-content: center;
   color: #fff;
-  box-shadow: 0 0 16px rgba(200,20,20,.6), 0 0 30px rgba(200,20,20,.3);
-  transition: transform .2s, background .2s;
-  pointer-events: none;
+  box-shadow:
+    0 0 14px rgba(200, 150, 12, 0.5),
+    0 0 28px rgba(139, 0, 0, 0.4);
+  transition: transform .2s, background .2s, box-shadow .2s;
+  pointer-events: none; /* clicks pass through to video */
+  z-index: 2;
 }
-.yt-card:hover .yt-play-btn { transform: translate(-50%,-50%) scale(1.12); background: rgba(220,30,30,.95); }
+.media-card:hover .vid-play-btn {
+  transform: translate(-50%, -50%) scale(1.12);
+  background: rgba(180, 0, 0, 0.98);
+  box-shadow: 0 0 22px rgba(200,150,12,.7), 0 0 40px rgba(139,0,0,.5);
+}
 
-/* When video is playing: hide thumb + play button, show iframe */
-.yt-card.playing .yt-thumb,
-.yt-card.playing .yt-play-btn { display: none; }
-.yt-card.playing iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: none; }
+/* Hide play button once video is playing */
+.media-card.vid-playing .vid-play-btn {
+  display: none;
+}
 
+/* Show native controls only while playing */
+.media-card.vid-playing .local-video {
+  /* controls are added via JS when playing */
+}
 
+/* ─────────────────────────────────────────
+   GALLERY MORE MESSAGE (below video grid)
+───────────────────────────────────────── */
+.gallery-more-msg {
+  max-width: 600px; margin: 2.5rem auto 0;
+  text-align: center;
+  padding: 2rem 1.5rem;
+  background: rgba(20, 8, 8, 0.7);
+  border: 1px solid rgba(200, 150, 12, 0.28);
+  border-radius: 16px;
+  box-shadow: 0 0 30px rgba(200, 150, 12, 0.08), 0 0 10px rgba(139, 0, 0, 0.15);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+}
+
+.gallery-more-sym {
+  font-family: var(--font-heading);
+  font-size: .85rem; color: var(--gold);
+  letter-spacing: .45rem; margin-bottom: .85rem; opacity: .75;
+}
+
+.gallery-more-text {
+  font-family: var(--font-elegant);
+  font-size: clamp(.85rem, 2.2vw, 1rem);
+  color: var(--white-dim);
+  line-height: 1.8;
+  margin-bottom: 1.4rem;
+}
+.gallery-more-text strong { color: var(--gold-light); font-style: normal; }
+
+.gallery-more-btns {
+  display: flex; flex-wrap: wrap;
+  gap: .75rem; justify-content: center;
+}
+
+.gallery-more-btn {
+  display: inline-flex; align-items: center; gap: .5rem;
+  font-family: var(--font-heading);
+  font-size: .76rem; letter-spacing: .1em;
+  padding: .6rem 1.3rem; border-radius: 50px;
+  border: 1px solid transparent;
+  transition: box-shadow .25s, transform .2s;
+  -webkit-tap-highlight-color: transparent;
+  white-space: nowrap;
+}
+.gallery-more-btn:hover, .gallery-more-btn:focus {
+  transform: translateY(-2px); outline: none;
+}
+
+/* Telegram button */
+.gallery-more-btn--tg {
+  color: #fff;
+  background: linear-gradient(135deg, #1a4a7a 0%, #1565c0 100%);
+  border-color: rgba(50, 140, 255, .45);
+  box-shadow: 0 0 14px rgba(50, 140, 255, .3);
+}
+.gallery-more-btn--tg:hover {
+  box-shadow: 0 0 24px rgba(50, 140, 255, .55);
+}
+
+/* YouTube button */
+.gallery-more-btn--yt {
+  color: #fff;
+  background: linear-gradient(135deg, #7a0000 0%, #c0181a 100%);
+  border-color: rgba(220, 40, 40, .45);
+  box-shadow: 0 0 14px rgba(220, 40, 40, .3);
+}
+.gallery-more-btn--yt:hover {
+  box-shadow: 0 0 24px rgba(220, 40, 40, .55);
+}
 /* ─────────────────────────────────────────
    REVIEWS
 ───────────────────────────────────────── */
@@ -876,6 +964,13 @@ address { font-style: normal; }
 .contact-icon--blue  { background: rgba(10,80,160,.2);  border: 1px solid rgba(50,140,255,.35); color: #4fa0ff; box-shadow: 0 0 10px rgba(50,140,255,.18); }
 .contact-icon--gold  { background: rgba(180,120,0,.15); border: 1px solid rgba(200,150,12,.4);  color: var(--gold-light); box-shadow: 0 0 10px rgba(200,150,12,.18); }
 .contact-icon--fb    { background: rgba(24,64,180,.2);  border: 1px solid rgba(66,103,178,.4);  color: #6b8fe8; box-shadow: 0 0 10px rgba(66,103,178,.18); }
+/* YouTube icon colour */
+.contact-icon--yt {
+  background: rgba(180, 0, 0, .18);
+  border: 1px solid rgba(220, 40, 40, .4);
+  color: #ff4444;
+  box-shadow: 0 0 10px rgba(220, 40, 40, .2);
+}
 
 .contact-info { display: flex; flex-direction: column; gap: .12rem; min-width: 0; }
 .contact-label { font-family: var(--font-elegant); font-size: .66rem; letter-spacing: .18em; color: var(--gold); text-transform: uppercase; }

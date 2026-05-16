@@ -153,47 +153,41 @@ document.addEventListener('keydown', function (e) {
   }
 });
 
-
-/* ─────────────────────────────────────────
-   ✅ FIX 4 — YOUTUBE THUMBNAIL PLAYER
-   Clicking a video card replaces thumbnail
-   with an actual YouTube iframe that autoplays
+   /* ─────────────────────────────────────────
+   LOCAL HTML5 VIDEO PLAYER
+   Clicking the play button starts the video.
+   Clicking again pauses it.
 ───────────────────────────────────────── */
-document.querySelectorAll('.yt-card').forEach(function (card) {
+document.querySelectorAll('.media-card').forEach(function (card) {
+  var video = card.querySelector('.local-video');
+  if (!video) return; /* skip photo cards */
 
-  function activateVideo() {
-    var videoId = card.getAttribute('data-id');
-    if (!videoId || card.classList.contains('playing')) return;
-
-    /* Create the iframe */
-    var iframe = document.createElement('iframe');
-    iframe.setAttribute('src',
-  'https://www.youtube-nocookie.com/embed/' + videoId +
-  '?autoplay=1&rel=0&modestbranding=1&playsinline=1'
-);
-    iframe.setAttribute('allow', 'autoplay; encrypted-media; fullscreen');
-    iframe.setAttribute('allowfullscreen', '');
-    iframe.setAttribute('title', 'YouTube video player');
-    iframe.setAttribute('loading', 'lazy');
-
-    /* Add iframe to the wrapper */
-    var wrapper = card.querySelector('.media-wrapper');
-    if (wrapper) {
-      wrapper.appendChild(iframe);
+  /* Tap/click anywhere on card to play/pause */
+  card.addEventListener('click', function () {
+    if (video.paused) {
+      /* Pause all other videos first */
+      document.querySelectorAll('.local-video').forEach(function (v) {
+        if (v !== video) {
+          v.pause();
+          v.closest('.media-card').classList.remove('vid-playing');
+          v.removeAttribute('controls');
+        }
+      });
+      video.setAttribute('controls', ''); /* show native controls */
+      video.play();
+      card.classList.add('vid-playing');
+    } else {
+      video.pause();
+      video.removeAttribute('controls');
+      card.classList.remove('vid-playing');
     }
+  });
 
-    /* Hide thumbnail + play button via CSS class */
-    card.classList.add('playing');
-  }
-
-  card.addEventListener('click', activateVideo);
-
-  /* Also support keyboard (Enter / Space) */
-  card.addEventListener('keydown', function (e) {
-    if (e.key === 'Enter' || e.key === ' ') {
-      e.preventDefault();
-      activateVideo();
-    }
+  /* When video ends: reset to poster state */
+  video.addEventListener('ended', function () {
+    card.classList.remove('vid-playing');
+    video.removeAttribute('controls');
+    video.load(); /* reset to poster frame */
   });
 });
 
